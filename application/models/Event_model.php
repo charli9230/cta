@@ -35,12 +35,12 @@ class Event_model extends CI_Model {
         $this->db->select('eventID');
         $this->db->from('event_student');
         $this->db->where('completed',true);
+        $this->db->where('studentID',$id);
         $where_clause = $this->db->get_compiled_select();
 
         #Create main query
         $this->db->select('e.*','es.date_completed');
         $this->db->from('event e','event_student es');
-
         $this->db->where("`eventID` IN ($where_clause)", NULL, true);
         $query = $this->db->get();
         $row = $query->result_array();
