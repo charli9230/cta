@@ -1,0 +1,35 @@
+body{
+	margin-top: 5px;
+}
+
+/*.bs-example{
+	margin: 10% auto;
+margin-left: 30%;
+margin-right: 30%;
+
+}*/
+#error{
+	color: red;
+}
+
+.bs-example h1{
+	text-align: center;
+}
+#form_event{
+	margin-bottom: 50px;
+}
+#event_list{
+	margin-top: 0px;
+}
+
+#form_event h1 ,#event_list h1{
+	font-size: 25px;
+}
+
+#form_even_details{
+	display: table;
+  margin: 0 auto;
+}
+
+.nav .navbar-brand {
+    color: #d6d6d6

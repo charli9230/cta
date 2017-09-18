@@ -1,0 +1,51 @@
+body
+{
+ text-align:center;
+ width:100%;
+ margin:0 auto;
+ padding:0px;
+ background-color:#193446;
+}
+#wrapper
+{
+ margin:0 auto;
+ padding:0px;
+ text-align:center;
+
+}
+#login_div
+{
+background-color:white;
+padding:20px;
+padding-bottom: 0px;
+max-width:400px;
+margin-top:100px;
+margin-left: auto;
+margin-right: auto; 
+}
+#login_div button
+{
+ margin-top:20px;
+ height:40px;
+ width:100%;
+}
+
+ul{
+	margin-top: 20px;
+}
+li{
+	margin: 10px;
+}
+#login_div p a{
+	color: #df6e21;
+}
+
+#login_div .waves-light{
+background-color:  #df6e21;
+}
+
+#login_div h1{
+	font-size: 20px;
+	font-weight: 900;
+	text-transform: uppercase;
+}
