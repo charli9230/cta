@@ -52,12 +52,6 @@ class Event_model extends CI_Model {
         }
     }
 
-
-
-
-
-
-
 	public function select_all_event_student_unregistered($id){
 		#Create where clause
 		$this->db->select('eventID');
@@ -174,19 +168,6 @@ class Event_model extends CI_Model {
 
 	}
 
-/*		public function select_all_courses(){
-		$this->db->select('courseID,description,purpose');
-		$this->db->from('course');
-		$this->db->order_by("courseID", "asc");
-		$query = $this->db->get();
-    	if ($query->num_rows() > 0) {
-        return $query;
-	    } else {
-	        return false;
-	    }
-
-	}*/
-
 	public function select_all_event_by_num($Num_sel){
 		$this->db->select('*');
 		$this->db->where('startDate >', date("Y-m-d"));
@@ -202,7 +183,7 @@ class Event_model extends CI_Model {
 
 	}
 
-		public function select_stud_event(){
+    public function select_stud_event(){
 		$this->db->select('*');
 		$this->db->where('studentID', $id);
 		$this->db->from('event');
@@ -217,8 +198,6 @@ class Event_model extends CI_Model {
 	    }
 	}
 
-	/*select_next_five_event function might be 
-	deleted because not serving any purpose*/
 	public function select_next_five_event(){
 		$this->db->select('*');
 		$this->db->where('startDate >', date("Y-m-d"));
