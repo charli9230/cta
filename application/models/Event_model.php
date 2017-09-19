@@ -50,6 +50,9 @@ class Event_model extends CI_Model {
             return false;
         }
     }
+
+
+
 	public function select_all_event_student_unregistered($id){
 		#Create where clause
 		$this->db->select('eventID');
