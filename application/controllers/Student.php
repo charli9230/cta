@@ -320,8 +320,8 @@ class Student extends CI_Controller {
             //$data ['all_event'] = $this->Event_model->select_all_event();
             $data ['all_courses_compl'] = $this->Event_model->select_all_event_student_completed($this->session->userdata['logged_in']['id']);
 
-           /* print_r($data['all_courses_compl']);
-            exit();*/
+            print_r($data['all_courses_compl']);
+            exit();
             /*Header*/
             $this->load->view('header/start_header');
             //$this->load->view('bootstrap/bootstrap_header');
