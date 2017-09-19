@@ -31,10 +31,9 @@ $id = $this->session->userdata['logged_in']['id']
         <hr>
            <table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
           <tr>
-            <th width="8%">Event ID</th>
-            <th width="15%">Event Title</th>
-            <th width="8%"> Completion Date</th>
-            <th width="6%">Take Action</th>
+            <th width="30%">Event Title</th>
+            <th width="30%"> Completion Date</th>
+            <th width="40%">Take Action</th>
           </tr>
 
           <?php if (isset($all_courses_compl) && $all_courses_compl!=false) {?>
@@ -42,7 +41,7 @@ $id = $this->session->userdata['logged_in']['id']
 
             <tbody>
           <tr>
-            <td><?php echo $comp_cour['eventID'] ;?></td>
+
             <td><?php echo $comp_cour['title'] ;?></td>
             <td><?php echo $comp_cour['date_completed'] ;?></td>
 

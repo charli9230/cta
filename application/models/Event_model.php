@@ -39,9 +39,9 @@ class Event_model extends CI_Model {
         $where_clause = $this->db->get_compiled_select();
 
         #Create main query
-        $this->db->select('e.*','s.date_completed');
-        $this->db->from('event e','event_student s');
-        $this->db->where("`e.eventID` IN ($where_clause)", NULL, true);
+        $this->db->select('event.*','event_student.date_completed');
+        $this->db->from('event','event_student');
+        $this->db->where("`event.eventID` IN ($where_clause)", NULL, true);
         $query = $this->db->get();
         $row = $query->result_array();
         if ($query->num_rows() > 0) {
